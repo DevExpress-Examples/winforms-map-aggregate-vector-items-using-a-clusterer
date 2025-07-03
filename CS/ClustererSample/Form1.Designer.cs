@@ -31,7 +31,7 @@
             this.vectorItemsLayer1 = new DevExpress.XtraMap.VectorItemsLayer();
             this.listSourceDataAdapter1 = new DevExpress.XtraMap.ListSourceDataAdapter();
             this.imageTilesLayer1 = new DevExpress.XtraMap.ImageLayer();
-            this.bingMapDataProvider1 = new DevExpress.XtraMap.BingMapDataProvider();
+            this.azureMapDataProvider1 = new DevExpress.XtraMap.AzureMapDataProvider();
             this.map = new DevExpress.XtraMap.MapControl();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
             this.SuspendLayout();
@@ -48,9 +48,9 @@
             this.listSourceDataAdapter1.DefaultMapItemType = DevExpress.XtraMap.MapItemType.Dot;
             this.listSourceDataAdapter1.Mappings.Latitude = "Latitude";
             this.listSourceDataAdapter1.Mappings.Longitude = "Longitude";
-            this.imageTilesLayer1.DataProvider = this.bingMapDataProvider1;
-            this.bingMapDataProvider1.BingKey = "Insert your Bing Key here";
-            this.bingMapDataProvider1.Kind = DevExpress.XtraMap.BingMapKind.RoadGray;
+            this.imageTilesLayer1.DataProvider = this.azureMapDataProvider1;
+            this.azureMapDataProvider1.AzureKey = "Insert your Azure Key here";
+            this.azureMapDataProvider1.Tileset = DevExpress.XtraMap.AzureTileset.BaseRoad;
             // 
             // map
             // 
@@ -96,7 +96,7 @@
 
         private DevExpress.XtraMap.MapControl map;
         private DevExpress.XtraMap.ImageLayer imageTilesLayer1;
-        private DevExpress.XtraMap.BingMapDataProvider bingMapDataProvider1;
+        private DevExpress.XtraMap.AzureMapDataProvider azureMapDataProvider1;
         private DevExpress.XtraMap.VectorItemsLayer vectorItemsLayer1;
         private DevExpress.XtraMap.ListSourceDataAdapter listSourceDataAdapter1;
     }

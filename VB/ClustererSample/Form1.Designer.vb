@@ -33,7 +33,7 @@ Namespace ClustererSample
             Me.vectorItemsLayer1 = New DevExpress.XtraMap.VectorItemsLayer()
             Me.listSourceDataAdapter1 = New DevExpress.XtraMap.ListSourceDataAdapter()
             Me.imageTilesLayer1 = New DevExpress.XtraMap.ImageLayer()
-            Me.bingMapDataProvider1 = New DevExpress.XtraMap.BingMapDataProvider()
+            Me.azureMapDataProvider1 = New DevExpress.XtraMap.AzureMapDataProvider()
             Me.map = New DevExpress.XtraMap.MapControl()
             CType((Me.map), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
@@ -50,9 +50,9 @@ Namespace ClustererSample
             Me.listSourceDataAdapter1.DefaultMapItemType = DevExpress.XtraMap.MapItemType.Dot
             Me.listSourceDataAdapter1.Mappings.Latitude = "Latitude"
             Me.listSourceDataAdapter1.Mappings.Longitude = "Longitude"
-            Me.imageTilesLayer1.DataProvider = Me.bingMapDataProvider1
-            Me.bingMapDataProvider1.BingKey = "Insert your Bing Key here"
-            Me.bingMapDataProvider1.Kind = DevExpress.XtraMap.BingMapKind.RoadGray
+            Me.imageTilesLayer1.DataProvider = Me.azureMapDataProvider1
+            Me.azureMapDataProvider1.AzureKey = "Insert your Azure Key here"
+            Me.azureMapDataProvider1.Tileset = DevExpress.XtraMap.AzureTileset.BaseRoad
             ' 
             ' map
             ' 
@@ -98,7 +98,7 @@ Namespace ClustererSample
 
         Private imageTilesLayer1 As DevExpress.XtraMap.ImageLayer
 
-        Private bingMapDataProvider1 As DevExpress.XtraMap.BingMapDataProvider
+        Private azureMapDataProvider1 As DevExpress.XtraMap.AzureMapDataProvider
 
         Private vectorItemsLayer1 As DevExpress.XtraMap.VectorItemsLayer
 
